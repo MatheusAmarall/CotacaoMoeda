@@ -8,9 +8,7 @@ getCotacao() async {
 }
 
 getEspecifyCotacao(moedas) async {
-  print(moedas);
   String parametros = moedas.join(',');
-  print(parametros);
   var url = Uri.parse('http://economia.awesomeapi.com.br/json/last/${parametros}');
   var response = await http.get(url);
   return (jsonDecode(response.body));

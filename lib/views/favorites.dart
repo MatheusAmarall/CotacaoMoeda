@@ -27,8 +27,6 @@ class _FavoritesState extends State<Favorites> {
                 itemCount: indexMoedas.length,
                 itemBuilder: (context, index) {
                   var moeda = snapshot.data[indexMoedas[index]];
-                  print(moeda);
-
                   return Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Card(
